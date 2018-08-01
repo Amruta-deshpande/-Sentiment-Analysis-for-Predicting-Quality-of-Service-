@@ -46,7 +46,7 @@ def read_file(filename):
 
 def removed_stopwords(input_list):
     """
-    This function removes stop_words.
+    This function removes stop_words like 'and','a','the'
     :param input_list:
     :return:
     """
@@ -58,7 +58,8 @@ def removed_stopwords(input_list):
 
 def stemming(input_list):
     """
-    This function performs stemming on the input.
+    This function performs stemming on the input
+    that is bring down the word to the root word.
     :param input_list: data.
     :return:
     """
@@ -84,6 +85,9 @@ def pos_tagging(input_list):
 def pos_filter(input_list):
     """
     Apply POS Filter on the input data.
+    NN-	(Noun, singular or mass) , NNS-	(Noun, plural ) , NNP-(Proper noun, singular)
+   	NNPS-(Proper noun, plural)
+    JJ-(Adjective), JJR-(Adjective, comparative), JJS-(Adjective, superlative)
     :param input_list:
     :return:
     """
