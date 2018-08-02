@@ -17,6 +17,10 @@ def main():
     """
     This function drives the execution of the program.
     :return:
+    column 14- page function result/website
+    column 15- page function result/review description
+    column 16- page function result/review title
+    column 17 -page function result/rating.
     """
     data = []
     with open(file_name, encoding="utf8") as source:
